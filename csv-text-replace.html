@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--add in page title-->
+        <title>CSV Parse and Paste</title>
+        <!-- <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon/"> -->
+		<!--add in stylesheet-->
+        <link rel="stylesheet" href="csv-text-replace.css">
+        <!--[if IE]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <form id='replacer'>
+            <input type="file" required accept='.csv' id='csv' name="csv">
+            <textarea id='input' placeholder='Type or copy and paste in your HTML here.' rows="20" cols="90"></textarea>
+            <input type="submit" value="Transform!">
+        </form>
+        <div>
+            <textarea id='output' placeholder="See output here..." rows="20" cols="80"></textarea>
+        </div>
+      
+        <footer>
+            <p><span id="heart">&#10084;</span> Michelle Wee &copy; 2015</p>
+            <p><a href="index">Return Home</a></p>
+        </footer>
+        <!--jQuery-->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--add in JS file-->
+        <script src="csv-text-replace.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
